@@ -21,7 +21,7 @@ const projects = [
     title: "The Blue Bottle",
     imgSrc: "/images/project-1.png",
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    projectLink: "https://www.bluebottlecoffeekorea.com",
     tech: ["Membership", "Coffee", "Brand", "Loyalty"],
     description:
       "Blue Bottle presents an innovative approach to our renowned customer loyalty program with the exclusive Blue Bottle NFTs.",
@@ -50,7 +50,7 @@ const projects = [
     imgSrc: "/images/project-2.jpeg",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Node", "Express", "Postgres", "Kafka", "Redis"],
+    tech: ["Idol", "Gameing", "Metaverse"],
     description:
       "A social community for painters to connect with others in their community. I handle everything backend (50K monthly active users).",
     modalContent: (
