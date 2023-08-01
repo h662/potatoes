@@ -10,8 +10,7 @@ const aboutCards = [
   {
     image: "2.png",
     title: "확장성",
-    description:
-      "살아있는 유기체처럼 계속해서 확장 및 변화를 시도하는 팬 커뮤니티",
+    description: "살아있는 생명처럼 계속 확장과 변화를 시도하는 커뮤니티",
   },
   {
     image: "3.png",
@@ -21,7 +20,7 @@ const aboutCards = [
   {
     image: "4.png",
     title: "IP",
-    description: "아이돌 굿즈부터 캐릭터 상품까지 IP를 활용한 다양한 서비스",
+    description: "굿즈부터 캐릭터 상품까지 IP를 활용한 다양한 서비스",
   },
 ];
 

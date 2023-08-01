@@ -10,10 +10,12 @@ export const AboutCard = ({ image, title, description }) => {
         </div>
       </Reveal>
       <Reveal>
-        <div className="text-center my-6 font-bold md:text-4xl">{title}</div>
+        <div className="text-center my-6 font-bold md:text-5xl">{title}</div>
       </Reveal>
       <Reveal>
-        <div className="my-6 text-sm md:text-xl">{description}</div>
+        <div className="my-6 text-sm md:text-3xl leading-loose">
+          {description}
+        </div>
       </Reveal>
     </div>
   );
