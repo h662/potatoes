@@ -176,7 +176,7 @@ export default function Login({ names }) {
         <div className="mt-8 flex gap-4">
           <Reveal>
             <button
-              className="bg-red-100 w-24 h-24 rounded-full"
+              className="w-24 h-24 rounded-full"
               onClick={() => {
                 signIn("naver");
                 // router.push("/#home");
@@ -187,7 +187,7 @@ export default function Login({ names }) {
           </Reveal>
           <Reveal>
             <button
-              className="bg-red-100 w-24 h-24 rounded-full"
+              className="w-24 h-24 rounded-full"
               onClick={() => {
                 signIn("kakao");
               }}
@@ -197,7 +197,7 @@ export default function Login({ names }) {
           </Reveal>
           <Reveal>
             <button
-              className="bg-red-100 w-24 h-24 rounded-full"
+              className="w-24 h-24 rounded-full"
               onClick={() => {
                 signIn("google");
               }}
