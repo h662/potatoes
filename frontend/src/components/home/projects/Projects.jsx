@@ -56,21 +56,21 @@ const projects = [
     modalContent: (
       <>
         <p>
-          K/DA is gaining explosive love with their hit song 'POP/STARS'. From
-          the trademark tail that even deceives fans to the fantastic atmosphere
-          of the studio, fans are going crazy for K/DA's unconventional sense.
-          Like Ari said, “I always want to convey the message to be true to
-          myself,” K/DA intends to showcase their music to the world through a
-          world tour.
+          K/DA is gaining explosive love with their hit song
+          &apos;POP/STARS&apos;. From the trademark tail that even deceives fans
+          to the fantastic atmosphere of the studio, fans are going crazy for
+          K/DA&apos;s unconventional sense. Like Ari said, &quot;I always want
+          to convey the message to be true to myself,&quot; K/DA intends to
+          showcase their music to the world through a world tour.
         </p>
         <p>
-          Meet kda's new music as soon as possible! Own a groundbreaking nft
-          with kda's music. Use nft as a profile on multiple platforms and
-          become a "popstar" anywhere.
+          Meet K/DA&apos;s new music as soon as possible! Own a groundbreaking
+          nft with K/DA&apos;s music. Use nft as a profile on multiple platforms
+          and become a &quot;popstar&quot; anywhere.
         </p>
         <p>
           Through nft, you will be able to exercise your rights to purchase
-          related goods or online concert tickets. Prove your love for KDA by
+          related goods or online concert tickets. Prove your love for K/DA by
           creating fan art with nft.
         </p>
         <p>
@@ -104,16 +104,16 @@ const projects = [
           on the rarity.
         </p>
         <p>
-          A higher rarity card that matches a player's back number will have a
-          higher price. Additional cards are given through challenges or quests,
-          or events related to baseball game tickets are being prepared.
+          A higher rarity card that matches a player&apos;s back number will
+          have a higher price. Additional cards are given through challenges or
+          quests, or events related to baseball game tickets are being prepared.
         </p>
         <p>
-          KIA Tigers declared 'a club with fans' with its foundation in 2001.
-          KIA Tigers is making constant efforts to grow into a club that knows
-          exactly what fans really want. In addition, the team is doing their
-          best every game for the fans, and the front desk will do its best to
-          serve the fans.
+          KIA Tigers declared &apos;a club with fans&apos; with its foundation
+          in 2001. KIA Tigers is making constant efforts to grow into a club
+          that knows exactly what fans really want. In addition, the team is
+          doing their best every game for the fans, and the front desk will do
+          its best to serve the fans.
         </p>
       </>
     ),
@@ -131,11 +131,12 @@ const projects = [
         <p>
           Do you use a Samsung cell phone or an iPhone? What laptop do you use?
           What graphics card are you using? Have fun communicating with people
-          who have a common interest in 'tech'.
+          who have a common interest in &apos;tech&apos;.
         </p>
         <p>
-          Follow Isseop's 'Oman Company' and show off what you bought. Are you a
-          true Black Cow? Share how you use Black Cow goods in your daily life.
+          Follow Itseop&apos;s &apos;O-Man-Sang-Sa&apos; and show off what you
+          bought. Are you a true Black Cow? Share how you use Black Cow goods in
+          your daily life.
         </p>
         <p>
           What more activities could you do? Communicate freely and plan events.
