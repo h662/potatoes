@@ -3,49 +3,54 @@ import { toast } from "react-toastify";
 import { OutlineButton } from "../buttons/OutlineButton";
 import { AiOutlineLogin } from "react-icons/ai";
 import Link from "next/link";
+import { useAppState, useAppDispatch } from "@/lib/AppContext";
 
-export default function WalletLogIn({ account, setAccount }) {
+export default function WalletLogIn() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const { account } = useAppState();
+  const dispatch = useAppDispatch();
 
-  const handleLogin = (res) => {
-    setAccount(res[0]);
-    setIsLoggedIn(true);
-    localStorage.setItem("walletAddress", res[0]);
-  };
+  const setAccount = (account) => dispatch({ type: "SET_ACCOUNT", account });
 
-  const onClickAccount = async () => {
-    if (!window.ethereum) {
-      toast.error("메타마스크 설치가 필요합니다.", {
-        position: toast.POSITION.TOP_CENTER,
-      });
-      return;
-    }
-    const res = await window.ethereum.request({
-      method: "eth_requestAccounts",
-    });
-    handleLogin(res);
+  // const handleLogin = (res) => {
+  //   setAccount(res[0]);
+  //   setIsLoggedIn(true);
+  //   localStorage.setItem("walletAddress", res[0]);
+  // };
 
-    try {
-      const accounts = await toast.promise(
-        window.ethereum.enable(),
-        {
-          pending: "Metamask 지갑 연동 중",
-        },
-        { closeButton: true },
-        { position: toast.POSITION.TOP_CENTER }
-      );
-      setAccount(accounts[0]);
-      localStorage.setItem("walletAddress", accounts[0]);
-      toast.success(`${accounts[0].slice(0, 13)}...님 환영합니다.`, {
-        position: toast.POSITION.TOP_CENTER,
-      });
-    } catch {
-      toast.error("로그인 실패! 다시 시도해주세요.", {
-        position: toast.POSITION.TOP_CENTER,
-      });
-    }
-  };
+  // const onClickAccount = async () => {
+  //   if (!window.ethereum) {
+  //     toast.error("메타마스크 설치가 필요합니다.", {
+  //       position: toast.POSITION.TOP_CENTER,
+  //     });
+  //     return;
+  //   }
+  //   const res = await window.ethereum.request({
+  //     method: "eth_requestAccounts",
+  //   });
+  //   handleLogin(res);
+
+  //   try {
+  //     const accounts = await toast.promise(
+  //       window.ethereum.enable(),
+  //       {
+  //         pending: "Metamask 지갑 연동 중",
+  //       },
+  //       { closeButton: true },
+  //       { position: toast.POSITION.TOP_CENTER }
+  //     );
+  //     setAccount(accounts[0]);
+  //     localStorage.setItem("walletAddress", accounts[0]);
+  //     toast.success(`${accounts[0].slice(0, 13)}...님 환영합니다.`, {
+  //       position: toast.POSITION.TOP_CENTER,
+  //     });
+  //   } catch {
+  //     toast.error("로그인 실패! 다시 시도해주세요.", {
+  //       position: toast.POSITION.TOP_CENTER,
+  //     });
+  //   }
+  // };
 
   const onClickModal = () => {
     setIsOpen(true);
@@ -99,7 +104,7 @@ export default function WalletLogIn({ account, setAccount }) {
     return () => {
       window.ethereum?.removeListener("accountsChanged", handleChangeAccounts);
     };
-  }, [account, setAccount]);
+  }, [account]);
 
   useEffect(() => {
     const storedWalletAddress = localStorage.getItem("walletAddress");
@@ -107,7 +112,7 @@ export default function WalletLogIn({ account, setAccount }) {
       setAccount(storedWalletAddress);
       setIsLoggedIn(true);
     }
-  }, [setAccount]);
+  }, [account]);
 
   useEffect(() => {
     if (!window.ethereum) {
@@ -141,7 +146,7 @@ export default function WalletLogIn({ account, setAccount }) {
     return () => {
       window.ethereum?.removeListener("networkChanged", handleNetworkChanged);
     };
-  }, [setAccount]);
+  }, [account]);
 
   // return (
   //   <>
@@ -164,11 +169,33 @@ export default function WalletLogIn({ account, setAccount }) {
   // );
 
   return (
-    <Link href="/login">
-      <OutlineButton onClick={onClickModal}>
-        <AiOutlineLogin className="inline-block mr-4 text-3xl" />
-        Login
-      </OutlineButton>
-    </Link>
+    <>
+      {account !== "" ? (
+        <>
+          <div className="flex items-center justify-between">
+            <OutlineButton onClick={handleDone}>
+              {account.substring(0, 4)}...
+              {account.substring(account.length - 4)}
+            </OutlineButton>
+            <div className="ml-10">
+              <OutlineButton onClick={handleLogout}>로그아웃</OutlineButton>
+            </div>
+          </div>
+        </>
+      ) : (
+        <Link href="/login">
+          <OutlineButton onClick={onClickModal}>
+            <AiOutlineLogin className="inline-block mr-4 text-3xl" />
+            LogIn
+          </OutlineButton>
+        </Link>
+      )}
+    </>
+    // <Link href="/login">
+    //   <OutlineButton onClick={onClickModal}>
+    //     <AiOutlineLogin className="inline-block mr-4 text-3xl" />
+    //     Login
+    //   </OutlineButton>
+    // </Link>
   );
 }
