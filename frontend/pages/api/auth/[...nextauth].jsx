@@ -14,8 +14,9 @@ export const authOptions = {
       clientSecret: process.env.NEXT_PUBLIC_NAVER_CLIENT_SECRET,
     }),
     GoogleProvider({
-      clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
-      clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
+      clientId:
+        "389112190082-20t1j1f3of88k9crfa2vctq96opatdjc.apps.googleusercontent.com",
+      clientSecret: "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",
     }),
   ],
   secret: "potatoSecret",
