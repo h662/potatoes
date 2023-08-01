@@ -9,8 +9,9 @@ import { IoArrowBackOutline } from "react-icons/io5";
 import { useAppDispatch, useAppState } from "@/lib/AppContext";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import { signIn } from "next-auth/react";
 
-export default function Login() {
+export default function Login({ names }) {
   const { account } = useAppState();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -65,7 +66,6 @@ export default function Login() {
       });
     }
   };
-
 
   useEffect(() => {
     if (!window.ethereum) {
@@ -139,6 +139,16 @@ export default function Login() {
     };
   }, [account]);
 
+  useEffect(() => {
+    setAccount(names);
+  }, [account]);
+
+  useEffect(() => {
+    if (account) {
+      router.push("/#home");
+    }
+  }, [account]);
+
   return (
     <>
       <button
@@ -165,23 +175,34 @@ export default function Login() {
         </Reveal>
         <div className="mt-8 flex gap-4">
           <Reveal>
-            <button className="bg-red-100 w-24 h-24 rounded-full">
+            <button
+              className="bg-red-100 w-24 h-24 rounded-full"
+              onClick={() => {
+                signIn("naver");
+                // router.push("/#home");
+              }}
+            >
               <Image src="/images/ico_sns_naver@2x.png" fill alt="naver" />
             </button>
           </Reveal>
           <Reveal>
-            <button className="bg-red-100 w-24 h-24 rounded-full">
+            <button
+              className="bg-red-100 w-24 h-24 rounded-full"
+              onClick={() => {
+                signIn("kakao");
+              }}
+            >
               <Image src="/images/ico_sns_kakao@2x.png" fill alt="kakao" />
             </button>
           </Reveal>
           <Reveal>
-            <button className="bg-red-100 w-24 h-24 rounded-full">
+            <button
+              className="bg-red-100 w-24 h-24 rounded-full"
+              onClick={() => {
+                signIn("google");
+              }}
+            >
               <Image src="/images/ico_sns_google@2x.png" fill alt="google" />
-            </button>
-          </Reveal>
-          <Reveal>
-            <button className="bg-red-100 w-24 h-24 rounded-full">
-              <Image src="/images/ico_sns_apple@2x.png" fill alt="apple" />
             </button>
           </Reveal>
         </div>

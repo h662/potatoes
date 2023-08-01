@@ -4,9 +4,9 @@ import { OutlineButton } from "../buttons/OutlineButton";
 import { AiOutlineLogin } from "react-icons/ai";
 import Link from "next/link";
 import { useAppState, useAppDispatch } from "@/lib/AppContext";
+import { HandleLogout } from "./HandleLogout";
 
 export default function WalletLogIn() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const { account } = useAppState();
   const dispatch = useAppDispatch();
@@ -23,7 +23,7 @@ export default function WalletLogIn() {
     });
     alert("로그아웃 되었습니다.");
     setAccount("");
-    setIsLoggedIn(false);
+    HandleLogout();
     localStorage.removeItem("walletAddress");
     window.location.reload();
   };
@@ -71,7 +71,6 @@ export default function WalletLogIn() {
     const storedWalletAddress = localStorage.getItem("walletAddress");
     if (storedWalletAddress) {
       setAccount(storedWalletAddress);
-      setIsLoggedIn(true);
     }
   }, [account]);
 
@@ -115,8 +114,14 @@ export default function WalletLogIn() {
         <>
           <div className="flex items-center justify-between">
             <OutlineButton onClick={handleDone}>
-              {account.substring(0, 4)}...
-              {account.substring(account.length - 4)}
+              {account.length === 42 ? (
+                <>
+                  {account.substring(0, 4)}...
+                  {account.substring(account.length - 4)}
+                </>
+              ) : (
+                <>{account} 님</>
+              )}
             </OutlineButton>
             <div className="ml-10">
               <OutlineButton onClick={handleLogout}>로그아웃</OutlineButton>
