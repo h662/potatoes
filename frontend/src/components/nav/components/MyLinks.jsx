@@ -16,7 +16,7 @@ export const MyLinks = () => {
         transition={{ duration: 0.5, delay: 0.0 }}
       >
         <Link
-          href="https://opensea.io/collection/mfers"
+          href="https://testnets.opensea.io/collection/ticket-124"
           target="_blank"
           rel="nofollow"
         >
@@ -43,7 +43,11 @@ export const MyLinks = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <Link href="https://www.twitter.com" target="_blank" rel="nofollow">
+        <Link
+          href="https://twitter.com/Silversidedish_"
+          target="_blank"
+          rel="nofollow"
+        >
           <AiFillTwitterCircle size="2.4rem" />
         </Link>
       </motion.span>

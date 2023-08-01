@@ -31,11 +31,13 @@ export default function Minting() {
   };
 
   return (
-    <button
-      className="mt-20 bg-main text-black rounded-full text-4xl font-bold p-7"
-      onClick={onClickMint}
-    >
-      MINT
-    </button>
+    <>
+      <button
+        className="mt-20 bg-main text-black rounded-full text-4xl font-bold p-7"
+        onClick={onClickMint}
+      >
+        MINT
+      </button>
+    </>
   );
 }

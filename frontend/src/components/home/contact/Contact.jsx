@@ -18,14 +18,18 @@ export const Contact = () => {
             <br />
             You can also find me on{" "}
             <Link
-              href="https://www.linkedin.com"
+              href="https://www.instagram.com/silversidedish_25/"
               target="_blank"
               rel="nofollow"
             >
-              Linkedin
+              Instagram
             </Link>{" "}
             or{" "}
-            <Link href="https://www.twitter.com" target="_blank" rel="nofollow">
+            <Link
+              href="https://twitter.com/Silversidedish_"
+              target="_blank"
+              rel="nofollow"
+            >
               Twitter
             </Link>{" "}
             if that&apos;s more your speed.
