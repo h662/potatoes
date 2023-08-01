@@ -49,95 +49,96 @@ const projects = [
     title: "Project KDA",
     imgSrc: "/images/project-2.jpeg",
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    projectLink: "https://universe.leagueoflegends.com/ko_KR/kda/",
     tech: ["Idol", "Gameing", "Metaverse"],
     description:
       "A social community for painters to connect with others in their community. I handle everything backend (50K monthly active users).",
     modalContent: (
       <>
         <p>
-          The Canvas Club is a social community for painters to connect with
-          others in their community.
+          K/DA is gaining explosive love with their hit song 'POP/STARS'. From
+          the trademark tail that even deceives fans to the fantastic atmosphere
+          of the studio, fans are going crazy for K/DA's unconventional sense.
+          Like Ari said, “I always want to convey the message to be true to
+          myself,” K/DA intends to showcase their music to the world through a
+          world tour.
         </p>
         <p>
-          I work primarily on the backend, a collection of Node & Express
-          microservices. Data is stored primarily in Postgres & cached in Redis.
+          Meet kda's new music as soon as possible! Own a groundbreaking nft
+          with kda's music. Use nft as a profile on multiple platforms and
+          become a "popstar" anywhere.
         </p>
         <p>
-          The team in total consists of 5 developers. This is a passion project
-          for all of us.
+          Through nft, you will be able to exercise your rights to purchase
+          related goods or online concert tickets. Prove your love for KDA by
+          creating fan art with nft.
         </p>
         <p>
-          Because this isn&apos;t real, here&apos;s some gibberish to fill space{" "}
+          We are preparing to reward fans for their interest, such as a random
+          rarity skin airdrop event.
           {":)"}
         </p>
+      </>
+    ),
+  },
+  {
+    title: "KIA TIGERS",
+    imgSrc: "/images/kia_emblem.jpg",
+    code: "https://www.github.com",
+    projectLink: "https://tigers.co.kr/",
+    tech: ["Baseball", "2023", "Ticket", "Membership"],
+    description:
+      "Please watch the powerful flight of the tigers in the 2023 season. We ask for the fans' unchanging love and encouragement. KIA Tigers will always be by your side.",
+    modalContent: (
+      <>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
+          Thanks to the unwavering faith and support of the fans, the KIA Tigers
+          were able to stand tall as the most prestigious team in Korean
+          professional baseball.
         </p>
         <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          It is a flow-based nft that allows you to purchase, collect, and trade
+          nft cards that contain the moments of KIA Tigers scoring. Cards are
+          divided into 4 grades, and 2 or more cards are sold as a randomly
+          bundled pack. This pack has different purchasing conditions depending
+          on the rarity.
+        </p>
+        <p>
+          A higher rarity card that matches a player's back number will have a
+          higher price. Additional cards are given through challenges or quests,
+          or events related to baseball game tickets are being prepared.
+        </p>
+        <p>
+          KIA Tigers declared 'a club with fans' with its foundation in 2001.
+          KIA Tigers is making constant efforts to grow into a club that knows
+          exactly what fans really want. In addition, the team is doing their
+          best every game for the fans, and the front desk will do its best to
+          serve the fans.
         </p>
       </>
     ),
   },
   {
-    title: "BrushWire",
-    imgSrc: "project-imgs/example-project.jpg",
+    title: "It-subscriber",
+    imgSrc: "/images/itsub.jpeg",
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["NextJS", "Java", "Spring", "AWS Aurora"],
+    projectLink: "https://www.youtube.com/channel/UCdUcjkyZtf-1WJyPPiETF1gQ",
+    tech: ["subscriber", "Tech", "fandom", "community"],
     description:
-      "Think Zapier but for paint. Built with a team of four college friends and scaled to > 1 billion requests per day. This was a fun one.",
+      "We are subscribers of ITSub, a tech creator who can't stand to be curious. Become an It-Subscriber by verifying your subscribers and taking the ITSub Quiz!",
     modalContent: (
       <>
         <p>
-          Brush wire is essentially Zapier but for paint. Built with a team of
-          four college friends and scaled to {">"} 1 billion requests per day.
-          This was a fun one.
+          Do you use a Samsung cell phone or an iPhone? What laptop do you use?
+          What graphics card are you using? Have fun communicating with people
+          who have a common interest in 'tech'.
         </p>
         <p>
-          Since &quot;Zapier for paint&quot; doesn&apos;t mean anything, be
-          creative {":)"}
+          Follow Isseop's 'Oman Company' and show off what you bought. Are you a
+          true Black Cow? Share how you use Black Cow goods in your daily life.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Paint Reference 4",
-    imgSrc: "project-imgs/example-project.jpg",
-    code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Python", "FastAPI", "SQLAlchemy"],
-    description:
-      "I couldn't think of another paint reference app, so here we are. I think you get the idea, right? Use your imagination 🌈",
-    modalContent: (
-      <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
-        <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
-        </p>
-        <p>You get the idea. Now more lorem {":)"}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          What more activities could you do? Communicate freely and plan events.
         </p>
       </>
     ),

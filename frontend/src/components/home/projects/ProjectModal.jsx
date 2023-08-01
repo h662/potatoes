@@ -2,6 +2,7 @@ import styles from "./projectmodal.module.scss";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { SiOpensea } from "react-icons/si";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 
@@ -53,14 +54,14 @@ export const ProjectModal = ({
           <div className={styles.suppliedContent}>{modalContent}</div>
           <div className={styles.modalFooter}>
             <p className={styles.linksText}>
-              Project Links<span>.</span>
+              Click to get more information<span>.</span>
             </p>
             <div className={styles.links}>
               <Link target="_blank" rel="nofollow" href={code}>
-                <AiFillGithub /> source code
+                <SiOpensea /> NFT marketplace
               </Link>
               <Link target="_blank" rel="nofollow" href={projectLink}>
-                <AiOutlineExport /> live project
+                <AiOutlineExport /> official website
               </Link>
             </div>
           </div>
