@@ -52,20 +52,20 @@ const projects = [
     projectLink: "https://universe.leagueoflegends.com/ko_KR/kda/",
     tech: ["Idol", "Gameing", "Metaverse"],
     description:
-      "A social community for painters to connect with others in their community. I handle everything backend (50K monthly active users).",
+      "KDA is gaining explosive love with their hit song 'POP STARS'. KDA intends to showcase their music to the world through a world tour. Maybe...?",
     modalContent: (
       <>
         <p>
-          K/DA is gaining explosive love with their hit song
-          &apos;POP/STARS&apos;. From the trademark tail that even deceives fans
-          to the fantastic atmosphere of the studio, fans are going crazy for
-          K/DA&apos;s unconventional sense. Like Ari said, &quot;I always want
-          to convey the message to be true to myself,&quot; K/DA intends to
-          showcase their music to the world through a world tour.
+          KDA is gaining explosive love with their hit song &apos;POP
+          STARS&apos;. From the trademark tail that even deceives fans to the
+          fantastic atmosphere of the studio, fans are going crazy for
+          KDA&apos;s unconventional sense. Like Ari said, &quot;I always want to
+          convey the message to be true to myself,&quot; KDA intends to showcase
+          their music to the world through a world tour.
         </p>
         <p>
-          Meet K/DA&apos;s new music as soon as possible! Own a groundbreaking
-          nft with K/DA&apos;s music. Use nft as a profile on multiple platforms
+          Meet KDA&apos;s new music as soon as possible! Own a groundbreaking
+          nft with KDA&apos;s music. Use nft as a profile on multiple platforms
           and become a &quot;popstar&quot; anywhere.
         </p>
         <p>
@@ -76,7 +76,6 @@ const projects = [
         <p>
           We are preparing to reward fans for their interest, such as a random
           rarity skin airdrop event.
-          {":)"}
         </p>
       </>
     ),
@@ -122,7 +121,7 @@ const projects = [
     title: "It-subscriber",
     imgSrc: "/images/itsub.jpeg",
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/channel/UCdUcjkyZtf-1WJyPPiETF1gQ",
+    projectLink: "https://www.youtube.com/channel/UCdUcjkyZtf-1WJyPPiETF1g",
     tech: ["subscriber", "Tech", "fandom", "community"],
     description:
       "We are subscribers of ITSub, a tech creator who can't stand to be curious. Become an It-Subscriber by verifying your subscribers and taking the ITSub Quiz!",
@@ -134,7 +133,7 @@ const projects = [
           who have a common interest in &apos;tech&apos;.
         </p>
         <p>
-          Follow Itseop&apos;s &apos;O-Man-Sang-Sa&apos; and show off what you
+          Follow Itsub&apos;s &apos;O-Man-Sang-Sa&apos; and show off what you
           bought. Are you a true Black Cow? Share how you use Black Cow goods in
           your daily life.
         </p>

@@ -15,7 +15,7 @@ export const Hero = () => {
         </Reveal>
         <Reveal>
           <h2 className={styles.subTitle}>
-            차별화된 소통방식을 통해 건강한 팬 커뮤니티 형성에 앞장서 나갑니다.
+            차별화된 소통방식을 통해 건강한 팬 커뮤니티 형성에 앞장섭니다.
             <div>
               <span>Web3를 사용한 팬덤 문화는 어떤 모습일까요?</span>
             </div>
@@ -27,11 +27,10 @@ export const Hero = () => {
             지속하기 어렵습니다.
             <br />
             <span className="text-main font-bold"> Massed Potatoes</span>는
-            블록체인 기술을 활용하여 팬들이 주도하는 팬 커뮤니티 문화 형성을
-            도와줍니다.
+            블록체인을 활용해 팬들이 주도하는 커뮤니티 문화 형성을 도와줍니다.
             <br />
-            또한, 자신의 팬심을 증명하는 수단과 홀더간의 소속감과 결속력 향상을
-            위한 다양한 서비스를 제공합니다.
+            또한, 자신의 팬심을 증명하는 수단이자 홀더간의 소속감과 결속력
+            향상을 위한 다양한 서비스를 제공합니다.
           </p>
         </Reveal>
         <Reveal>
