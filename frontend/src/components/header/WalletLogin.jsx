@@ -24,7 +24,6 @@ export default function WalletLogIn() {
     });
     alert("로그아웃 되었습니다.");
     setAccount("");
-    HandleLogout();
     localStorage.removeItem("walletAddress");
     window.location.reload();
   };
@@ -125,17 +124,21 @@ export default function WalletLogIn() {
               )}
             </OutlineButton>
             <div className="ml-10">
-              <OutlineButton>
-                <a
-                  href={`/api/auth/signout`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    signOut();
-                  }}
-                >
-                  로그아웃
-                </a>
-              </OutlineButton>
+              {account.length === 42 ? (
+                <OutlineButton onClick={handleLogout}>로그아웃</OutlineButton>
+              ) : (
+                <OutlineButton>
+                  <a
+                    href={`/api/auth/signout`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      signOut();
+                    }}
+                  >
+                    로그아웃
+                  </a>
+                </OutlineButton>
+              )}
             </div>
           </div>
         </>
