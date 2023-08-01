@@ -10,6 +10,7 @@ import { useAppDispatch, useAppState } from "@/lib/AppContext";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { signIn } from "next-auth/react";
+import Minting from "../mint/Minting";
 
 export default function Login({ names }) {
   const { account } = useAppState();

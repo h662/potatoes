@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <AppProvider>
           <ToastProvider />
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </AppProvider>
       </body>
     </html>
