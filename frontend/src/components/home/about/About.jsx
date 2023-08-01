@@ -1,57 +1,45 @@
-import { MyLinks } from "../../nav/components/MyLinks";
-import { Reveal } from "../../utils/Reveal.jsx";
 import { SectionHeader } from "../../utils/SectionHeader";
-import styles from "./about.module.scss";
-import { Stats } from "./Stats";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AboutCard } from "./AboutCard.jsx";
+
+const aboutCards = [
+  {
+    image: "",
+    title: "대중성",
+    description: "소셜 로그인을 통해 블록체인이 처음인 팬도 쉽게 사용 가능",
+  },
+  {
+    image: "",
+    title: "확장성",
+    description:
+      "살아있는 유기체처럼 계속해서 확장 및 변화를 시도하는 팬 커뮤니티",
+  },
+  {
+    image: "",
+    title: "Technology",
+    description: "인공지능(AI), VR 등 딥 테크 기술을 활용",
+  },
+  {
+    image: "",
+    title: "IP",
+    description: "아이돌 굿즈부터 캐릭터 상품까지 IP를 활용한 다양한 서비스",
+  },
+];
 
 export const About = () => {
   return (
     <section id="about" className="section-wrapper">
       <SectionHeader title="About" dir="l" />
-      <div className={styles.about}>
-        <div>
-          <Reveal>
-            <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hey! I&apos;m Bob, if you haven&apos;t already gathered that by
-              now. I&apos;m a painter turned software engineer from Daytona,
-              Florida. I specialize in the backend, primarily Node and Rust, but
-              love building with whatever tools are right for the job.
-            </p>
-          </Reveal>
-          <Reveal>
-            <p className={styles.aboutText}>
-              I currently work for Google on Google Photos. I also toss in my ¢2
-              with the design systems teams from time to time (once an artist,
-              always an artist, amirite?).
-            </p>
-          </Reveal>
-          <Reveal>
-            <p className={styles.aboutText}>
-              Outside of work, I still love to paint. Any given Sunday
-              you&apos;ll find me scribbling some happy clouds with my son ☁️ I
-              even teach courses online if you&apos;re looking to learn!
-            </p>
-          </Reveal>
-          <Reveal>
-            <p className={styles.aboutText}>
-              I&apos;m passively looking for new positions where I can merge my
-              love for code with my love for the canvas. If you think
-              you&apos;ve got an opening that I might like, let&apos;s connect
-              🔗
-            </p>
-          </Reveal>
-          <Reveal>
-            <div className={styles.links}>
-              <div className={styles.linksText}>
-                <span>My links</span>
-                <AiOutlineArrowRight />
-              </div>
-              <MyLinks />
-            </div>
-          </Reveal>
-        </div>
-        <Stats />
+      <div className="mt-32 grid grid-cols-2 md:grid-cols-4 justify-items-center">
+        {aboutCards.map((v, i) => {
+          return (
+            <AboutCard
+              key={i}
+              image={v.image}
+              title={v.title}
+              description={v.description}
+            />
+          );
+        })}
       </div>
     </section>
   );
