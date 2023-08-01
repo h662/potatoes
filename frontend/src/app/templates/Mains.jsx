@@ -1,9 +1,16 @@
 "use client";
 
+import { useEffect } from "react";
 import Main from "../../components/home/Home";
-import { useState } from "react";
+import {} from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function Mains() {
-  const [account, setAccount] = useState("");
-  return <Main account={account} setAccount={setAccount} />;
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/#home");
+  }, []);
+
+  return <Main />;
 }
