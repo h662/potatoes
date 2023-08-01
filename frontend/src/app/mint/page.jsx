@@ -7,7 +7,7 @@ export default function Mint() {
       <div className={styles.copyWrapper}>
         <Reveal>
           <h1 className={styles.title}>
-            WE R POTATOES<span>.</span>
+            WE R MASShed POTATOES<span>.</span>
           </h1>
         </Reveal>
         <Reveal>
