@@ -1,5 +1,5 @@
 import { MyLinks } from "../../nav/components/MyLinks";
-import { Reveal } from "../../utils/Reveal";
+import { Reveal } from "../../utils/Reveal.jsx";
 import { SectionHeader } from "../../utils/SectionHeader";
 import styles from "./about.module.scss";
 import { Stats } from "./Stats";

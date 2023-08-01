@@ -1,5 +1,5 @@
 import styles from "./header.module.scss";
-import { Reveal } from "./Reveal";
+import { Reveal } from "./Reveal.jsx";
 
 export const SectionHeader = ({ title, dir = "r" }) => {
   return (

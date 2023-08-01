@@ -1,6 +1,6 @@
 "use client";
 
-import { Reveal } from "../../utils/Reveal";
+import { Reveal } from "../../utils/Reveal.jsx";
 import { useAnimation, useInView, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";

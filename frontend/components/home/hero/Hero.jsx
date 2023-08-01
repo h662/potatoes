@@ -1,5 +1,5 @@
 import { StandardButton } from "../../buttons/StandardButton";
-import { Reveal } from "../../utils/Reveal";
+import { Reveal } from "../../utils/Reveal.jsx";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
 

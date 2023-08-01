@@ -1,7 +1,6 @@
 import styles from "./heading.module.scss";
-import { MyLinks } from "./components/MyLinks";
-import { OutlineButton } from "../buttons/OutlineButton";
-import WalletLogIn from "../templates/WallerLogin";
+import { MyLinks } from "../nav/components/MyLinks";
+import WalletLogIn from "./WalletLogin";
 
 export const Heading = ({ account, setAccount }) => {
   return (

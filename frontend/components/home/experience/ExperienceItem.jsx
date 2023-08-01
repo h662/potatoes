@@ -1,4 +1,4 @@
-import { Reveal } from "../../utils/Reveal";
+import { Reveal } from "../../utils/Reveal.jsx";
 import styles from "./experience.module.scss";
 
 export const ExperienceItem = ({

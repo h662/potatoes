@@ -2,13 +2,13 @@ import React from "react";
 import { SideBar } from "../nav/SideBar";
 import { Hero } from "./hero/Hero";
 import styles from "./home.module.scss";
-import { Heading } from "../nav/Heading";
+import { Heading } from "../header/Heading";
 import { About } from "./about/About";
 import { Projects } from "./projects/Projects";
 import { Experience } from "./experience/Experience";
 import { Contact } from "./contact/Contact";
 
-export default function Main({account, setAccount}) {
+export default function Main({ account, setAccount }) {
   return (
     <>
       <div className={styles.home}>

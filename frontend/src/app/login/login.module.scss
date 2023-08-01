@@ -1,0 +1,13 @@
+.title {
+  font-size: var(--text-lg);
+  font-weight: 900;
+  line-height: 1.1;
+
+  span {
+    color: var(--brand);
+  }
+
+  @media (max-width: 768px) {
+    font-size: var(--text-xl);
+  }
+}

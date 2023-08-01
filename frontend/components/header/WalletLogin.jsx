@@ -1,11 +1,12 @@
-import { BiWallet } from "react-icons/bi";
-import { FaApple } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { OutlineButton } from "../buttons/OutlineButton";
+import { AiOutlineLogin } from "react-icons/ai";
+import Link from "next/link";
 
 export default function WalletLogIn({ account, setAccount }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleLogin = (res) => {
     setAccount(res[0]);
@@ -46,12 +47,9 @@ export default function WalletLogIn({ account, setAccount }) {
     }
   };
 
-  // useEffect(() => {
-  //   if (refresh === true) {
-  //     alert("로그아웃 되었습니다.");
-  //     setRefresh(false);
-  //   }
-  // }, [refresh]);
+  const onClickModal = () => {
+    setIsOpen(true);
+  };
 
   const handleLogout = () => {
     toast.success("로그아웃 되었습니다.", {
@@ -86,7 +84,6 @@ export default function WalletLogIn({ account, setAccount }) {
       const changedAccount = window.ethereum?.selectedAddress;
 
       if (account !== changedAccount) {
-        // window.location.reload();
         toast.success(
           `${changedAccount.slice(0, 5)}..계정이 바뀌셨군요 ㅎㅎ!!`,
           {
@@ -128,7 +125,6 @@ export default function WalletLogIn({ account, setAccount }) {
 
     const handleNetworkChanged = () => {
       setAccount("");
-      // handleLogout();
       setIsLoggedIn(false);
       localStorage.removeItem("walletAddress");
       toast.warn(
@@ -147,23 +143,32 @@ export default function WalletLogIn({ account, setAccount }) {
     };
   }, [setAccount]);
 
+  // return (
+  //   <>
+  //     {isLoggedIn ? (
+  //       <>
+  //         <div className="flex items-center justify-between">
+  //           <OutlineButton onClick={handleDone}>
+  //             {account.substring(0, 4)}...
+  //             {account.substring(account.length - 4)}
+  //           </OutlineButton>
+  //           <div className="ml-10">
+  //             <OutlineButton onClick={handleLogout}>로그아웃</OutlineButton>
+  //           </div>
+  //         </div>
+  //       </>
+  //     ) : (
+  //       <OutlineButton onClick={onClickAccount}>Wallet Login</OutlineButton>
+  //     )}
+  //   </>
+  // );
+
   return (
-    <>
-      {isLoggedIn ? (
-        <>
-          <div className="flex items-center justify-between">
-            <OutlineButton onClick={handleDone}>
-              {account.substring(0, 4)}...
-              {account.substring(account.length - 4)}
-            </OutlineButton>
-            <div className="ml-10">
-              <OutlineButton onClick={handleLogout}>로그아웃</OutlineButton>
-            </div>
-          </div>
-        </>
-      ) : (
-        <OutlineButton onClick={onClickAccount}>Wallet Login</OutlineButton>
-      )}
-    </>
+    <Link href="/login">
+      <OutlineButton onClick={onClickModal}>
+        <AiOutlineLogin className="inline-block mr-4 text-3xl" />
+        Login
+      </OutlineButton>
+    </Link>
   );
 }

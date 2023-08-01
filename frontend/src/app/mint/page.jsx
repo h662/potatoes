@@ -1,5 +1,5 @@
 import styles from "./mint.module.scss";
-import { Reveal } from "../../../components/utils/Reveal";
+import { Reveal } from "../../../components/utils/Reveal.jsx";
 
 export default function Mint() {
   return (

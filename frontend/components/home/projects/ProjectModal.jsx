@@ -1,6 +1,5 @@
 import styles from "./projectmodal.module.scss";
 import { useEffect } from "react";
-import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";

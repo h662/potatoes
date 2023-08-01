@@ -9,7 +9,7 @@ export const SideBar = () => {
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section-wrapper");
-    console.log(sections);
+
     const options = {
       threshold: 0.3,
     };
