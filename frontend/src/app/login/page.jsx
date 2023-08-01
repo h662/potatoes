@@ -1,19 +1,25 @@
 "use client";
 
 import styles from "./login.module.scss";
-import { Reveal } from "../../../components/utils/Reveal.jsx";
-import { OutlineButton } from "../../../components/buttons/OutlineButton";
+import { Reveal } from "../../components/utils/Reveal.jsx";
+import { OutlineButton } from "../../components/buttons/OutlineButton";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { IoArrowBackOutline } from "react-icons/io5";
+import { useAppState } from "@/lib/AppContext";
+import { useEffect } from "react";
 
 export default function Login() {
+  const { account } = useAppState();
+
   const router = useRouter();
+
+  useEffect(() => console.log(account), [account]);
 
   return (
     <>
       <button
-        className="fixed top-32 left-64 text-6xl"
+        className="fixed top-8 md:top-32 left-16 md:left-64 text-6xl"
         onClick={() => router.back()}
       >
         <IoArrowBackOutline />

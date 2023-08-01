@@ -5,7 +5,7 @@ import { useAnimation, useInView, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
-import { ProjectModal } from "./ProjectModal";
+import { ProjectModal } from "./ProjectModal.jsx";
 import styles from "./projects.module.scss";
 
 export const Project = ({

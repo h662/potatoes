@@ -1,6 +1,6 @@
 "use client";
 
-import Main from "../../../components/home/Home";
+import Main from "../../components/home/Home";
 import { useState } from "react";
 
 export default function Mains() {
