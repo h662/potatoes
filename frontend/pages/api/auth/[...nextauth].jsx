@@ -19,6 +19,14 @@ export const authOptions = {
     }),
   ],
   secret: "potatoSecret",
+  events: {
+    async signOut({ token, session }) {
+      res.setHeader("Set-Cookie", "");
+
+      token = {};
+      session = {};
+    },
+  },
 };
 
 export default NextAuth(authOptions);
