@@ -10,36 +10,39 @@ export const Hero = () => {
       <div className={styles.copyWrapper}>
         <Reveal>
           <h1 className={styles.title}>
-            WE R <span className="text-main">MASS</span>hed POTATOES
+            WE R <span className="text-main">&</span>Ticket
             <span>.</span>
           </h1>
         </Reveal>
         <Reveal>
           <h2 className={styles.subTitle}>
-            차별화된 소통방식을 통해 건강한 팬 커뮤니티 형성에 앞장섭니다.
+            나의 팬 활동을 기록하고 증명하고 싶은 니즈를
             <div>
-              <span>Web3를 사용한 팬덤 문화는 어떤 모습일까요?</span>
+              <span>번거롭지 않은 방식을 통해</span>
             </div>
+            NFT소유로 경험할 수 있도록 하는 플랫폼입니다.
           </h2>
         </Reveal>
         <Reveal>
           <p className={styles.aboutCopy}>
-            스타는 팬 없이 존재할 수 없고, 팬은 건강한 팬덤 문화가 없다면
-            지속하기 어렵습니다.
+            누구나 한 번쯤은 들어봤고, 궁금은 하지만
             <br />
-            <span className="text-main font-bold"> Massed Potatoes</span>는
-            블록체인을 활용해 팬들이 주도하는 커뮤니티 문화 형성을 도와줍니다.
+            가장 큰 문제였던
+            <span className="text-main font-bold"> ‘번거로운 접근’</span>
+            이라는 문제점을 개선하였습니다.
             <br />
-            또한, 자신의 팬심을 증명하는 수단이자 홀더간의 소속감과 결속력
-            향상을 위한 다양한 서비스를
+            더 이상 소수의 필요성에 의해서 움직이는 블록체인이 아닌
             <br />
-            제공합니다.
+            <span className="text-main font-bold">‘덕후’</span>들에게 필수재로서
+            가치를 담은 콘텐츠를 제안합니다.
           </p>
         </Reveal>
         <Reveal>
-          <Link href={"/mint"}>
-            <StandardButton>Mint</StandardButton>
-          </Link>
+          <StandardButton
+            onClick={() => document.getElementById("contact")?.scrollIntoView()}
+          >
+            Contact me
+          </StandardButton>
         </Reveal>
       </div>
       <DotGrid />
