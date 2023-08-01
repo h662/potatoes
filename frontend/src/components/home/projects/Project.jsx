@@ -4,7 +4,8 @@ import { Reveal } from "../../utils/Reveal.jsx";
 import { useAnimation, useInView, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
+import { AiOutlineExport } from "react-icons/ai";
+import { SiOpensea } from "react-icons/si";
 import { ProjectModal } from "./ProjectModal.jsx";
 import styles from "./projects.module.scss";
 
@@ -68,7 +69,7 @@ export const Project = ({
               <div className={styles.projectTitleLine} />
 
               <Link href={code} target="_blank" rel="nofollow">
-                <AiFillGithub size="2.8rem" />
+                <SiOpensea size="2.4rem" />
               </Link>
 
               <Link href={projectLink} target="_blank" rel="nofollow">

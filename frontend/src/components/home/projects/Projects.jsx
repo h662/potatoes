@@ -18,43 +18,36 @@ export const Projects = () => {
 
 const projects = [
   {
-    title: "Paint.app",
-    imgSrc: "project-imgs/example-project.jpg",
+    title: "The Blue Bottle",
+    imgSrc: "/images/project-1.png",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Flutter", "MUI", "Python", "FastAPI"],
+    tech: ["Membership", "Coffee", "Brand", "Loyalty"],
     description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.",
+      "Blue Bottle presents an innovative approach to our renowned customer loyalty program with the exclusive Blue Bottle NFTs.",
     modalContent: (
       <>
         <p>
-          Pain.app is a real-time coaching app for students learning to paint.
-          This app is my baby, designed and built on my own.
+          Blue Bottle presents an innovative approach to our renowned customer
+          loyalty program with the exclusive Blue Bottle NFTs.
         </p>
         <p>
-          The tech stack is based on top of Flutter for the mobile app,
-          connected to a Python & FastAPI backend, with data stored in Postgres,
-          deployed on Heroku.
+          Embracing the blockchain revolution, we're introducing 2000 identical,
+          limited edition NFTs representing a unique blend of digital ownership
+          and real-world privileges.
         </p>
         <p>
-          Because this isn&apos;t real, here&apos;s some gibberish to fill space{" "}
-          {":)"}
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          This one-of-a-kind digital asset serves as a passport to an elite Blue
+          Bottle experience, pairing the innovation of NFTs with our dedication
+          to creating meaningful moments of connection between our customers and
+          their coffee.
         </p>
       </>
     ),
   },
   {
-    title: "The Canvas Club",
-    imgSrc: "project-imgs/example-project.jpg",
+    title: "Project KDA",
+    imgSrc: "/images/project-2.jpeg",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: ["Node", "Express", "Postgres", "Kafka", "Redis"],
