@@ -3,23 +3,23 @@ import { AboutCard } from "./AboutCard.jsx";
 
 const aboutCards = [
   {
-    image: "",
+    image: "1.png",
     title: "대중성",
     description: "소셜 로그인을 통해 블록체인이 처음인 팬도 쉽게 사용 가능",
   },
   {
-    image: "",
+    image: "2.png",
     title: "확장성",
     description:
       "살아있는 유기체처럼 계속해서 확장 및 변화를 시도하는 팬 커뮤니티",
   },
   {
-    image: "",
+    image: "3.png",
     title: "Technology",
     description: "인공지능(AI), VR 등 딥 테크 기술을 활용",
   },
   {
-    image: "",
+    image: "4.png",
     title: "IP",
     description: "아이돌 굿즈부터 캐릭터 상품까지 IP를 활용한 다양한 서비스",
   },
