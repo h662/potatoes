@@ -125,23 +125,21 @@ export default function WalletLogIn() {
               )}
             </OutlineButton>
             <div className="ml-10">
-              <OutlineButton>
-                <a
-                  href={`/api/auth/signout`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    signOut();
-                    toast.success("로그아웃 되었습니다.", {
-                      position: toast.POSITION.TOP_CENTER,
-                    });
-                    setAccount("");
-                    localStorage.removeItem("walletAddress");
-                    window.location.reload();
-                  }}
-                >
-                  로그아웃
-                </a>
-              </OutlineButton>
+              <a
+                href={`/api/auth/signout`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  signOut();
+                  toast.success("로그아웃 되었습니다.", {
+                    position: toast.POSITION.TOP_CENTER,
+                  });
+                  setAccount("");
+                  localStorage.removeItem("walletAddress");
+                  window.location.reload();
+                }}
+              >
+                로그아웃
+              </a>
             </div>
           </div>
         </>
