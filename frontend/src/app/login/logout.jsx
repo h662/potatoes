@@ -1,5 +1,6 @@
 import { destroyCookie } from "nookies";
 
+
 export default async function handler({ req, res }) {
   // 쿠키를 제거하는 작업
   destroyCookie({ res }, "next-auth.csrf-token");

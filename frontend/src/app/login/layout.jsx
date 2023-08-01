@@ -4,6 +4,7 @@ import Login from "./page";
 
 export default async function Layout() {
   let session = await getServerSession(authOptions);
+  console.log(session);
   let names = "";
   if (session) {
     names = session.user.name;
