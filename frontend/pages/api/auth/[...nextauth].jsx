@@ -18,6 +18,7 @@ export const authOptions = {
       clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
     }),
   ],
+  secret: "potatoSecret",
   events: {
     async signOut({ token, session }) {
       res.setHeader("Set-Cookie", "");
