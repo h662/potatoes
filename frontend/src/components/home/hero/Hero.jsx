@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { StandardButton } from "../../buttons/StandardButton";
 import { Reveal } from "../../utils/Reveal.jsx";
 import { DotGrid } from "./DotGrid";
@@ -32,15 +33,13 @@ export const Hero = () => {
             또한, 자신의 팬심을 증명하는 수단이자 홀더간의 소속감과 결속력
             향상을 위한 다양한 서비스를
             <br />
-             제공합니다.
+            제공합니다.
           </p>
         </Reveal>
         <Reveal>
-          <StandardButton
-            onClick={() => document.getElementById("contact")?.scrollIntoView()}
-          >
-            Contact me
-          </StandardButton>
+          <Link href={"/mint"}>
+            <StandardButton>Mint</StandardButton>
+          </Link>
         </Reveal>
       </div>
       <DotGrid />
