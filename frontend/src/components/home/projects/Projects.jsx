@@ -32,9 +32,9 @@ const projects = [
           loyalty program with the exclusive Blue Bottle NFTs.
         </p>
         <p>
-          Embracing the blockchain revolution, we're introducing 2000 identical,
-          limited edition NFTs representing a unique blend of digital ownership
-          and real-world privileges.
+          Embracing the blockchain revolution, w&apos;re introducing 2000
+          identical, limited edition NFTs representing a unique blend of digital
+          ownership and real-world privileges.
         </p>
         <p>
           This one-of-a-kind digital asset serves as a passport to an elite Blue
