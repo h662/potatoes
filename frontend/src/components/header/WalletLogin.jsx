@@ -5,6 +5,7 @@ import { AiOutlineLogin } from "react-icons/ai";
 import Link from "next/link";
 import { useAppState, useAppDispatch } from "@/lib/AppContext";
 import { HandleLogout } from "./HandleLogout";
+import { signOut } from "next-auth/react";
 
 export default function WalletLogIn() {
   const [isOpen, setIsOpen] = useState(false);
@@ -124,13 +125,22 @@ export default function WalletLogIn() {
               )}
             </OutlineButton>
             <div className="ml-10">
-              <OutlineButton
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleLogout();
-                }}
-              >
-                로그아웃
+              <OutlineButton>
+                <a
+                  href={`/api/auth/signout`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    signOut();
+                    toast.success("로그아웃 되었습니다.", {
+                      position: toast.POSITION.TOP_CENTER,
+                    });
+                    setAccount("");
+                    localStorage.removeItem("walletAddress");
+                    window.location.reload();
+                  }}
+                >
+                  로그아웃
+                </a>
               </OutlineButton>
             </div>
           </div>
