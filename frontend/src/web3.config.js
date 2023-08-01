@@ -1,6 +1,19 @@
+import { MetaMaskSDK } from "@metamask/sdk";
 import Web3 from "web3";
 
-export const NFT_CONTRACT_ADDRESS = "0x540b8857F2FefEAFE85E01F34862611b34f39851";
+const MMSDK = new MetaMaskSDK({
+  dappMetadata: {
+    name: "ManHwa3.0",
+    url: "https://manhwa3.com",
+  },
+});
+
+export const ethereum = MMSDK.getProvider();
+
+export const web3 = new Web3(ethereum);
+
+export const NFT_CONTRACT_ADDRESS =
+  "0x540b8857F2FefEAFE85E01F34862611b34f39851";
 const NFT_CONTRACT_ABI = [
   {
     inputs: [
@@ -461,7 +474,9 @@ const NFT_CONTRACT_ABI = [
   },
 ];
 
-export const BANK_CONTRACT_ADDRESS = "0xDB3Ce47845F55611Ea1bBE006c6509E0cBA2fAE2";
+export const BANK_CONTRACT_ADDRESS =
+  "0xDB3Ce47845F55611Ea1bBE006c6509E0cBA2fAE2";
+
 const BANK_CONTRACT_ABI = [
   {
     inputs: [
@@ -544,7 +559,6 @@ const BANK_CONTRACT_ABI = [
   },
 ];
 
-export const web3 = new Web3(window.ethereum);
 export const nftContract = new web3.eth.Contract(
   NFT_CONTRACT_ABI,
   NFT_CONTRACT_ADDRESS
